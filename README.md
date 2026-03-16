@@ -15,8 +15,10 @@
 ## En sintesis:
 Aprender la terminal facilita la optimizacion y gestion del tiempo y mejora ademas la eficiencia del scripting.
 
-## Mi ruta de instalacion del git bash seria : /mingw64/bin/git
+## Mi ruta de instalacion del git bash seria : 
+* /mingw64/bin/git
+* c:\Program files\git\cmd\git.exe
 
 ## Tecnologias usadas:
--HTML5
--CSS3.
+* -HTML5
+* -CSS3.
