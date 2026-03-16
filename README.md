@@ -19,4 +19,4 @@ Aprender la terminal facilita la optimizacion y gestion del tiempo y mejora adem
 
 #Tecnologias usadas:
 -HTML5
--CSS3
+-CSS3.
