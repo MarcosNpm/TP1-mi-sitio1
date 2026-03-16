@@ -1,6 +1,6 @@
 # Comandos he usado:
 
-* ls, cat, touch, cd, mkdir, rm, which, code, git, cp, clear, 
+* ls, cat, touch, cd, mkdir, rm, which, code, git, cp, clear, echo
 
 * ls: lo use para ver la lista de elementos mientras usaba la termina.
 
@@ -23,3 +23,5 @@
 * cp: lo use para copiar archivos de otros directorios.
 
 * clear: lo use para limpiar mi terminal 
+
+* echo: lo use para probar unas configuraciónew de vs code
