@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Sitio Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>mark_repair</title>
+    <link rel="stylesheet" href=".\style\style.css">
   </head>
   <body>
     <header class="Lista" id="Header">
@@ -14,12 +14,12 @@
         <a href="#Sobre-Mi" class="link" id="MenUp">Sobre Mi</a>
         <a href="#Reparacion" class="link" id="MenUp">Reparacion</a>
         <a href="#Educacion" class="link" id="MenUp">Educacion</a>
-        <a href="#Contacto" class="link" id="MenUp">Contacto</a>
+        <a href="./contact.html" class="link" id="MenUp">Formulario de contacto</a>
       </nav>
     </header>
     <div>
       <a href="#">
-      <img src=".\Imagenes\icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="37" height="36" class="arrow">
+      <img src=".\Assets\icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" class="arrow" alt="Subir al inicio" id="MenUp">
       </a>
     </div>
     <section class="Me" id="Sobre-Mi">  
@@ -43,7 +43,7 @@
         </p>
       </div>  
       <h2><p>Este soy yo 🖐</p></h2>
-      <img src=".\Imagenes\Me.jpg" alt="Foto de mia meme" class="Owner"/>
+      <img src=".\Assets\mi_persona.jpeg" alt="Foto de mi persona posando" class="Owner"/>
     </section>
     <main>
       <section class="Celulares" id="Reparacion">
@@ -53,11 +53,9 @@
             celulares, como cambio de pantalla, cambio de batería, entre otras.
           </p>
         </div>
-        <p>Aqui estan imagenes de clientes satisfechos con el service</p>
-        <ol>
-        <img src=".\Imagenes\Opinion Positiva.jpg" alt="Opinion Positiva de un cliente" class="custumer"/>
-        <img src=".\Imagenes\Opinion.jpg" alt="Opinion Positiva de otro cliente" class="custumer"/>
-      </ol>
+        <p><h2>Aqui estan imagenes de clientes satisfechos con el service</h2></p>
+        <img src=".\Assets\review_positive.jpg" alt="Opinion de un cliente por un servicio de celular" class="custumer"/>
+        <img src=".\Assets\review.jpg" alt="Opinion de un segundo cliente sobre un servicio de celular" class="custumer"/>
       </section>
       <section class="Computadoras" id="Reparacion">
         <h2>Reparacion de Computadoras</h2>
@@ -70,104 +68,10 @@
           En esta sección se muestran las reparaciones que he realizado en
           Laptops, como desbloqueos, mantenimiento, etc.
         </p>
-        <img src=".\Imagenes\Opinion Positiva (2).jpg" alt="Opinion Positiva de una cliente " class="custumer"/>
-        <img src=".\Imagenes\Micro1.jpg" alt="Señalamiento de componente faltante" class="custumer"/>
+        <img src=".\Assets\review_positive_2.jpg" alt="Opinion sobre un servicio de laptop" class="custumer"/>
+        <img src=".\Assets\piece_micro_1.jpg" alt="Señalamiento de componente faltante en laptop" class="custumer"/>
       </section>
     </main>
-    <!-- ───────────────────────────────────────────────── -->
-    <!--  Formulario Escrito por el Profesor Ayrton Diaz   -->
-    <!-- ───────────────────────────────────────────────── -->
-    <section id="contacto" class="section">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-subtitle">
-        ¿Quieres un Presupuesto o tienes dudas? Escribime y te respondo a la
-        brevedad.
-      </p>
-      
-      <form action="#" method="POST" class="contact-form">
-        
-        <div class="form-group">
-          <label for="nombre">Nombre completo *</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholdeR="Ej: María García"
-            required
-            minlength="3"
-            maxlength="50"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="tu@email.com"
-            required
-          />
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="telefono">Teléfono</label>
-            
-            <input
-              type="tel"
-              id="telefono"
-              name="telefono"
-              placeholder="3874123456"
-              pattern="[0-9]{10}"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="motivo">Motivo de contacto *</label>
-    
-            <select id="motivo" name="motivo" required>
-              <option value="">Seleccionar...</option>
-              <option value="consulta">Consulta </option>
-              <option value="propuesta">Propuesta</option>
-              <option value="Presupuesto">Presupuesto</option>
-              <option value="otro">Otro</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="mensaje">Mensaje *</label>
-
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="5"
-            placeholder="Escribí tu mensaje aquí..."
-            required
-            minlength="10"
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-
-          <label class="checkbox-label">
-            <input type="checkbox" name="acepto" required />
-            Acepto que mis datos sean utilizados para responder mi consulta *
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-full">
-          Enviar mensaje
-        </button>
-
-        <p class="form-note">
-          * Campos obligatorios. Intentá enviar el formulario vacío para ver
-          la validación nativa del navegador en acción.
-        </p>
-      </form>
-    </section>
-    <!-- Creditos respectivos al profesor Ayrton Diaz-->
     <section class="Educacion" id="Educacion">
       <h2>Educacion</h2>
       <div class="table">
@@ -219,19 +123,33 @@
           </tbody>
         </table>
       </div>
-    <section class="Callme" id="Contacto">
-      <h2>Informacion Extra</h2>
-        <p>Si quieres contactarme, puedes hacerlo a través de los medios que se encuentran a continuación:</p>
-      <div class="Contact">
-        <a href="https://www.instagram.com/markus_npm/" class="link" id="MenDown">Instagram</a>
-        <a href="https://www.linkedin.com/in/marcos-agust%C3%ADn-n%C3%BA%C3%B1ez-9740aa300/?skipRedirect=true" class="link" id="MenDown">Linkedin
-        </a>
-        <a href="https://github.com/MarcosNpm" class="link" id="MenDown">Github </a>
-      </div>
-    </section>
-  </body>
-  <footer>
-    <hr />
-    <p>Copyright © 2026 Reparacion. Todos los derechos reservados.</p>
-  </footer>
+    </body>
+    <footer>
+      <hr>
+      <p>Copyright © 2026 Marcos Agustin Nuñez. Todos los derechos reservados. <br>Redes sociales para otro medio social</p>
+      <a href="https://www.instagram.com/markus_npm/" class="Social">
+              <img
+                src=".\Assets\instagram.png"
+                alt="logo de instragram"
+                alt="instagram"
+                id="MenDown"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/marcos-agust%C3%ADn-n%C3%BA%C3%B1ez-9740aa300/?skipRedirect=true"
+              class="Social">
+              <img src=".\Assets\linkedin.png"
+                alt="logo de linkedin"
+                id="MenDown"
+              />
+            </a>
+
+            <a href="https://github.com/MarcosNpm" class="Social">
+              <img
+                src=".\Assets\github.png"
+                alt="logo de github"
+                id="MenDown"
+              />
+            </a>
+    </footer>
 </html>

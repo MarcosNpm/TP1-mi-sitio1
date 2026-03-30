@@ -1,0 +1,83 @@
+* {
+  margin: 4px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  background-color: #56537f29;
+  border-bottom: 1px solid #f03030;
+  text-align: center;
+  padding: 16px;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #593b3b;
+  background-color: #451e1e29;
+}
+.Form {
+  box-sizing: border-box;
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px rgba(230, 222, 222, 0.1);
+}
+input:valid {
+  border: 1px solid #06a52b;
+  background-color: #f9f9f9;
+}
+input:invalid:not(:placeholder-shown) {
+  border: 1px solid #e61414;
+  background-color: #f9f9f9;
+}
+input:focus {
+  border: 1px groove #0112fa;
+  background-color: rgb(211, 211, 211);
+}
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input.terminos {
+  align-items: left;
+  margin-bottom: 10px;
+  align-self: flex-start; /* Tocara arreglar este bug, desconozco el como se hace el checkbox asi*/
+}
+.img {
+  display: block;
+  margin-left: 0%;
+  margin-right: 100%;
+  margin-top: 10px;
+  width: 6%;
+  height: auto;
+  box-shadow: #676464 0px 0px 10px;
+  border-radius: 100%;
+}
+.img:hover {
+  width: 8%;
+  height: auto;
+  box-shadow: #0b9bee 0px 0px 10px;
+  border-radius: 100%;
+}
+#MenDown {
+  display: display;
+  margin-left: 0%;
+  width: 4%;
+  height: auto;
+  box-shadow: #515251 0px 0px 10px;
+  border-radius: 100%;
+}
+#MenDown:hover {
+  width: 5%;
+  height: auto;
+  box-shadow: #3206d0 0px 0px 10px;
+  border-radius: 100%;
+}
