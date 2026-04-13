@@ -154,10 +154,6 @@ p {
   margin-bottom: var(--spacing-md);
   text-align: center;
 }
-.skills-card {
-  display: block;
-  text-align: center;
-}
 /*Footer*/
 li {
   display: grid;
@@ -195,66 +191,14 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 20%;
   box-shadow: #a8a614 0px 5px 10px;
   border-radius: 100%;
 }
 .Owner:hover {
   border-color: #2514a8;
   box-shadow: #2514a8 0px 0px 10px;
-  width: 32%;
-}
-.arrow {
-  position: fixed;
-  top: 89%;
-  left: 94%;
-  width: 50px;
-  padding-right: 0.2em;
-  font-size: 80%;
-  text-align: left;
-}
-.arrow:hover {
-  width: 60px;
-  padding-right: 0.2em;
-  font-size: 80%;
-  text-align: left;
-}
-/*Tablero de Educacion*/
-.table {
-  display: flex;
-  margin: 0%;
-  justify-content: center;
-  align-items: left;
-  padding: 10x;
-}
-.Data_In {
-  display: flexbox;
-  text-align: center;
-  margin: 0%;
-  padding: 0px;
-  color: #9f9090;
-  border: #121111 1px solid;
-  background-color: #121111;
-  width: 80%;
-}
-.TableOver {
-  background-color: #2514a8;
-  color: #9f9090;
-}
-* th {
-  background-color: #2107e2;
-  color: #f0f0f0;
-}
-* td {
-  color: #b3b2b6;
-}
-.Done {
-  color: #078625;
-  font-weight: bold;
-}
-.InProgress {
-  color: #b38704;
-  font-weight: bold;
+  width: 21%;
 }
 .Social,
 .Social:hover {
