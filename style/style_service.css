@@ -31,8 +31,6 @@
   /* Transiciones */
   --transition: all 0.3s ease;
 }
-
-/* Parte superior de la pagina*/
 .Header {
   display: flex;
   align-items: center;
@@ -99,19 +97,7 @@ header + .logo {
   border-radius: 16px;
   color: #f7ba02;
 }
-/* Parte del cuerpo*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-nav .section {
-  margin: 0%;
-  padding: 0px;
-  display: block;
-}
+/*Parte del Cuerpo*/
 body {
   font-family: var(--font-main);
   font-size: 1rem;
@@ -122,7 +108,8 @@ body {
 * p,
 h2,
 h3,
-h4 {
+h4,
+pre {
   color: var(--color-secondary);
 }
 h1 {
@@ -154,108 +141,19 @@ p {
   margin-bottom: var(--spacing-md);
   text-align: center;
 }
-.div {
-  display: block;
-  text-align: center;
-}
-/*Footer*/
-li {
+/*Seccion */
+.seccion {
   display: grid;
-  text-align: center;
-  margin: 0%;
-  padding: 4px;
-  box-shadow: 4px 3px 7px var(--color-secondary);
-}
-.Data_In {
-  margin: 50%;
-  padding: 0px;
-  color: #121111;
-  width: 100%;
-  padding: 10px;
-  box-shadow: 1px 1px 2px rgba(230, 222, 222, 0.1);
-}
-
-.custumer {
-  display: grid;
-  margin-left: justify-content;
-  margin-right: justify-content;
-  width: 30%;
-  box-shadow: #07ed1a 0px 0px 10px;
-  border-radius: 10%;
-  grid-template-columns: 250px 1fr 250px;
-  grid-template-rows: 80px 1fr 60px;
-  gap: 20px;
-}
-.custumer:hover {
-  border-color: #2514a8;
-  box-shadow: #2514a8 0px 0px 10px;
-  width: 32%;
-}
-.Owner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  box-shadow: #a8a614 0px 5px 10px;
-  border-radius: 100%;
-}
-.Owner:hover {
-  border-color: #2514a8;
-  box-shadow: #2514a8 0px 0px 10px;
-  width: 32%;
-}
-.arrow {
-  position: fixed;
-  top: 89%;
-  left: 94%;
-  width: 50px;
-  padding-right: 0.2em;
-  font-size: 80%;
-  text-align: left;
-}
-.arrow:hover {
-  width: 60px;
-  padding-right: 0.2em;
-  font-size: 80%;
-  text-align: left;
-}
-/*Tablero de Educacion*/
-.table {
-  display: flex;
-  margin: 0%;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: center;
-  align-items: left;
-  padding: 10x;
 }
-.Data_In {
-  display: flexbox;
-  text-align: center;
-  margin: 0%;
-  padding: 0px;
-  color: #9f9090;
-  border: #121111 1px solid;
-  background-color: #121111;
-  width: 80%;
+.seccion + h2 {
+  margin-top: var(--spacing-lg);
 }
-.TableOver {
-  background-color: #2514a8;
-  color: #9f9090;
-}
-* th {
-  background-color: #2107e2;
-  color: #f0f0f0;
-}
-* td {
-  color: #b3b2b6;
-}
-.Done {
-  color: #078625;
-  font-weight: bold;
-}
-.InProgress {
-  color: #b38704;
-  font-weight: bold;
-}
+/*Parte del Footer */
 .Social,
 .Social:hover {
   text-align: left;
@@ -264,11 +162,13 @@ li {
   box-sizing: border-box;
 }
 #MenDown {
-  display: display;
-  margin-left: 0%;
+  display: flexbox;
+  align-items: left;
+  border: var(--color-primary) 1px solid;
+  background-color: var(--color-secondary);
+  justify-content: flex-wrap;
   width: 4%;
-  height: auto;
-  box-shadow: #515251 0px 0px 10px;
+  font-size: 0.9rem;
   border-radius: 100%;
 }
 #MenDown:hover {
