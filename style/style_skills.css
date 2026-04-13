@@ -33,6 +33,17 @@
   --transition: all 0.3s ease;
 }
 
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+}
+
 /* Parte superior de la pagina*/
 .Header {
   display: flex;
@@ -99,7 +110,8 @@ header + .logo {
   width: 80%;
   border-radius: 16px;
   color: #f7ba02;
-} /*Body*/
+}
+/*Body*/
 body {
   font-family: var(--font-main);
   font-size: 1rem;
@@ -144,6 +156,12 @@ p {
   text-align: center;
 }
 /*Cards*/
+.skill-conteiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
 .skills-conteiner {
   display: flex;
   flex-wrap: wrap;

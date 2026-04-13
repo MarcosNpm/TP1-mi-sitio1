@@ -42,8 +42,17 @@
   min-height: 100vh;
 }
 
-aside {
-  display: none;
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
 }
 /* Parte superior de la pagina*/
 .Header {
