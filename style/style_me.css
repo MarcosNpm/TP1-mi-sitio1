@@ -119,7 +119,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
 }
-* p,
+p,
 h2,
 h3,
 h4 {
