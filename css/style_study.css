@@ -1,0 +1,215 @@
+:root {
+  /* Tipografía */
+  --font-body: "Segoe UI", "Roboto", Arial, sans-serif;
+  --font-heading: "Georgia", "Times New Roman", serif;
+  --font-code: "Consolas", "Courier New", monospace;
+  --color-primary: #4744bc;
+  --color-secondary: #2d232e;
+  --color-accent: #ffd000;
+  --color-text: #ffffff;
+  --color-bg: #f1f0ea;
+  --radius: 10%;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+
+  /* Espaciado (consistente en todo el sitio) */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 4rem; /* 64px */
+
+  /* Bordes y sombras */
+  --radius-sm: 10px;
+  --radius-md: 7px;
+  --radius-lg: 16px;
+  --radius-full: 50%; /* Círculo perfecto */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Transiciones */
+  --transition: all 0.3s ease;
+}
+.Header {
+  display: flex;
+  align-items: center;
+  border: var(--color-primary) 1px solid;
+  background-color: var(--color-secondary);
+  justify-content: space-between;
+}
+header + .logo {
+  color: var(--color-text);
+  justify-content: right;
+  padding-left: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 8vh;
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  color: #ffffff;
+  text-align: right;
+  padding: 1rem;
+}
+.navbar:hover {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav-links a {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 1 ease;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+}
+.nav-links a:hover {
+  color: var(--color-accent);
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  width: 70%;
+  color: #716e6e;
+  text-align: right;
+}
+.link:hover {
+  width: 80%;
+  border-radius: 16px;
+  color: #f7ba02;
+}
+/*Parte del Cuerpo*/
+body {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+p,
+h2,
+h3,
+h4,
+pre {
+  color: var(--color-secondary);
+}
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-primary);
+}
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+p {
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+/*Seccion */
+.seccion {
+  display: grid;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.seccion + h2 {
+  margin-top: var(--spacing-lg);
+}
+/*Parte del Footer */
+.Social,
+.Social:hover {
+  text-align: left;
+  margin: 0%;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#MenDown {
+  display: flexbox;
+  align-items: left;
+  border: var(--color-primary) 1px solid;
+  background-color: var(--color-secondary);
+  justify-content: flex-wrap;
+  width: 4%;
+  font-size: 0.9rem;
+  border-radius: 100%;
+}
+#MenDown:hover {
+  width: 5%;
+  height: auto;
+  box-shadow: #3206d0 0px 0px 10px;
+  border-radius: 100%;
+}
+.table {
+  display: flex;
+  margin: 0%;
+  justify-content: center;
+  align-items: left;
+  padding: 10x;
+}
+.Data_In {
+  display: flexbox;
+  text-align: center;
+  margin: 0%;
+  padding: 0px;
+  color: #9f9090;
+  border: #121111 1px solid;
+  background-color: #121111;
+  width: 80%;
+}
+.TableOver {
+  background-color: #2514a8;
+  color: #9f9090;
+}
+* th {
+  background-color: #2107e2;
+  color: #f0f0f0;
+}
+* td {
+  color: #b3b2b6;
+}
+.Done {
+  color: #078625;
+  font-weight: bold;
+}
+.InProgress {
+  color: #b38704;
+  font-weight: bold;
+}
